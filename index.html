@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — Train Times Live</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg:       #F0F4FA;
+      --surface:  #FFFFFF;
+      --border:   #E2E8F0;
+      --text:     #0A1628;
+      --muted:    #64748B;
+      --accent:   #003364;
+      --radius:   14px;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      padding: 40px 16px 80px;
+    }
+
+    .wrap {
+      max-width: 680px;
+      margin: 0 auto;
+    }
+
+    /* Header */
+    .header {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 36px;
+    }
+
+    .app-icon {
+      width: 56px;
+      height: 56px;
+      border-radius: 14px;
+      background: var(--accent);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .app-icon svg {
+      width: 30px;
+      height: 30px;
+      fill: none;
+      stroke: #fff;
+      stroke-width: 2;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    .header-text h1 {
+      font-size: 22px;
+      font-weight: 800;
+      letter-spacing: -0.4px;
+    }
+
+    .header-text p {
+      font-size: 13px;
+      color: var(--muted);
+      margin-top: 2px;
+    }
+
+    /* Card */
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      overflow: hidden;
+      margin-bottom: 16px;
+    }
+
+    .card-header {
+      padding: 14px 18px 10px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .card-header h2 {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.8px;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+
+    .row {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      padding: 14px 18px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .row:last-child {
+      border-bottom: none;
+    }
+
+    .row-icon {
+      width: 34px;
+      height: 34px;
+      border-radius: 9px;
+      background: rgba(0, 51, 100, 0.08);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      margin-top: 1px;
+    }
+
+    .row-icon svg {
+      width: 18px;
+      height: 18px;
+      fill: none;
+      stroke: var(--accent);
+      stroke-width: 2;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    .row-body h3 {
+      font-size: 14px;
+      font-weight: 600;
+      margin-bottom: 3px;
+    }
+
+    .row-body p {
+      font-size: 13px;
+      color: var(--muted);
+      line-height: 1.55;
+    }
+
+    /* Summary banner */
+    .summary {
+      background: rgba(0, 51, 100, 0.06);
+      border: 1px solid rgba(0, 51, 100, 0.14);
+      border-radius: var(--radius);
+      padding: 16px 18px;
+      margin-bottom: 16px;
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+    }
+
+    .summary svg {
+      width: 22px;
+      height: 22px;
+      flex-shrink: 0;
+      fill: none;
+      stroke: var(--accent);
+      stroke-width: 2;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      margin-top: 1px;
+    }
+
+    .summary p {
+      font-size: 14px;
+      color: var(--accent);
+      font-weight: 500;
+      line-height: 1.5;
+    }
+
+    /* Footer */
+    .footer {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 12px;
+      color: var(--muted);
+    }
+
+    .footer a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg:      #0A1628;
+        --surface: rgba(255,255,255,0.07);
+        --border:  rgba(255,255,255,0.10);
+        --text:    #F0F6FF;
+        --muted:   #7A8EA8;
+        --accent:  #60A5FA;
+      }
+
+      .row-icon {
+        background: rgba(96, 165, 250, 0.12);
+      }
+
+      .summary {
+        background: rgba(96, 165, 250, 0.08);
+        border-color: rgba(96, 165, 250, 0.18);
+      }
+
+      .app-icon {
+        background: #003364;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+
+    <!-- Header -->
+    <div class="header">
+      <div class="app-icon">
+        <!-- Train icon -->
+        <svg viewBox="0 0 24 24">
+          <rect x="4" y="3" width="16" height="14" rx="3"/>
+          <path d="M8 17l-2 4M16 17l2 4M8 17h8"/>
+          <circle cx="8.5" cy="13.5" r="1"/>
+          <circle cx="15.5" cy="13.5" r="1"/>
+          <path d="M4 10h16"/>
+          <path d="M8 6h8"/>
+        </svg>
+      </div>
+      <div class="header-text">
+        <h1>Train Times Live</h1>
+        <p>Privacy Policy &mdash; Last updated 1 June 2026</p>
+      </div>
+    </div>
+
+    <!-- Summary banner -->
+    <div class="summary">
+      <svg viewBox="0 0 24 24">
+        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+      </svg>
+      <p>Train Times Live does not collect, store, or share any personal data. Everything stays on your device.</p>
+    </div>
+
+    <!-- Data we collect -->
+    <div class="card">
+      <div class="card-header"><h2>Data we collect</h2></div>
+
+      <div class="row">
+        <div class="row-icon">
+          <svg viewBox="0 0 24 24"><path d="M20 7H4a2 2 0 00-2 2v6a2 2 0 002 2h16a2 2 0 002-2V9a2 2 0 00-2-2z"/><path d="M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16"/></svg>
+        </div>
+        <div class="row-body">
+          <h3>Nothing sent to our servers</h3>
+          <p>We operate no servers and collect no data. The app communicates only with National Rail's Darwin API to fetch live departure information.</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="row-icon">
+          <svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+        </div>
+        <div class="row-body">
+          <h3>Stored locally on your device</h3>
+          <p>Your saved stations, home/work shortcuts, recent searches, and theme preference are stored only on your device using iOS secure storage. This data never leaves your device.</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="row-icon">
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="4.93" y1="4.93" x2="19.07" y2="19.07"/></svg>
+        </div>
+        <div class="row-body">
+          <h3>No analytics or advertising</h3>
+          <p>We use no analytics SDKs, no crash reporting services, no advertising networks, and no third-party tracking of any kind.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Third-party services -->
+    <div class="card">
+      <div class="card-header"><h2>Third-party services</h2></div>
+
+      <div class="row">
+        <div class="row-icon">
+          <svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+        </div>
+        <div class="row-body">
+          <h3>National Rail Enquiries (Darwin API)</h3>
+          <p>Live departure and arrival data is fetched from Darwin, operated by National Rail Enquiries. Your search queries (station codes) are sent to this API solely to retrieve live train times. National Rail's own privacy policy applies to this data exchange.</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="row-icon">
+          <svg viewBox="0 0 24 24"><path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/></svg>
+        </div>
+        <div class="row-body">
+          <h3>Open Government Licence</h3>
+          <p>Train timetable and station data is licensed under the Open Government Licence v3.0, supplied by Network Rail and National Rail Enquiries.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Your rights -->
+    <div class="card">
+      <div class="card-header"><h2>Your rights &amp; data deletion</h2></div>
+
+      <div class="row">
+        <div class="row-icon">
+          <svg viewBox="0 0 24 24"><polyline points="3 6 5 6 21 6"/><path d="M19 6l-1 14a2 2 0 01-2 2H8a2 2 0 01-2-2L5 6"/><path d="M10 11v6M14 11v6"/><path d="M9 6V4a1 1 0 011-1h4a1 1 0 011 1v2"/></svg>
+        </div>
+        <div class="row-body">
+          <h3>Delete your data at any time</h3>
+          <p>All locally stored data (saved stations, history, preferences) can be cleared from within the app. Uninstalling the app removes all associated data from your device entirely.</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="row-icon">
+          <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.22 1.2 2 2 0 012.2 0h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.91 7.09a16 16 0 006 6l.56-.56a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 14.92v2z"/></svg>
+        </div>
+        <div class="row-body">
+          <h3>Contact us</h3>
+          <p>Questions about this policy? Email <a href="mailto:privacy@ockham.app">privacy@ockham.app</a></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <p>Train Times Live is developed by Ockham Labs.<br>
+      Powered by <a href="https://www.nationalrail.co.uk" target="_blank">National Rail Enquiries</a>.</p>
+    </div>
+
+  </div>
+</body>
+</html>
